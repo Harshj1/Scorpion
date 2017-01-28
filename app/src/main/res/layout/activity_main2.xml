@@ -24,23 +24,24 @@
         android:hint="Name"/>
 
     <Button
-        android:text="Button"
+        android:text="Register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="77dp"
-        android:id="@+id/button" />
+        android:id="@+id/button"
+        android:background="@drawable/textborder"
+        android:onClick="register" />
 
     <Spinner
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:id="@+id/spinner"
-        android:background="@drawable/textborder"
+        android:background="@android:drawable/btn_dropdown"
         android:padding="15dp"
         android:layout_centerVertical="true"
         android:layout_alignStart="@+id/name"
-        android:dropDownSelector="@android:drawable/btn_dropdown"
-        android:dropDownWidth="25dp" />
+        android:dropDownSelector="@android:drawable/btn_dropdown" />
     <!--android:entries="@language/Language"-->
 </RelativeLayout>
