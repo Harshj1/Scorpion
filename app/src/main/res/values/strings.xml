@@ -5,4 +5,11 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <string-array name="Language">
+        <item>English</item>
+        <item>हिंदी</item>
+        <item>मराठी</item>
+        <item>ગુજરાતી</item>
+    </string-array>
 </resources>
