@@ -11,19 +11,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.scorpion.Main2Activity">
 
-    <EditText
-        android:layout_height="wrap_content"
-        android:layout_width="250dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="114dp"
-        android:textSize="20dp"
-        android:padding="10dp"
-        android:background="@drawable/textborder"
-        android:id="@+id/name"
-        android:hint="@string/Name_hint"/>
-
     <Button
         android:text="Register"
         android:layout_width="wrap_content"
@@ -35,25 +22,39 @@
         android:background="@drawable/textborder"
         android:onClick="register" />
 
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:background="@drawable/textborder"
+        android:id="@+id/name"
+        android:hint="@string/Name_hint"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp" />
+
     <Spinner
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:id="@+id/spinner"
         android:background="@drawable/textborder"
         android:padding="15dp"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/name"
-        android:dropDownSelector="@android:drawable/btn_dropdown" />
+        android:dropDownSelector="@android:drawable/btn_dropdown"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/name" />
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <Spinner
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/arrow_down_float"
-        android:layout_centerVertical="true"
-        android:layout_alignEnd="@+id/spinner"
-        android:layout_marginEnd="14dp"
-        android:background="@color/blue"
-        android:id="@+id/imageView2" />
+        android:id="@+id/spinner2"
+        android:background="@drawable/textborder"
+        android:padding="15dp"
+        android:dropDownSelector="@android:drawable/btn_dropdown"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/spinner"
+        android:layout_alignStart="@+id/spinner" />
 
     <!--android:entries="@language/Language"-->
 </RelativeLayout>

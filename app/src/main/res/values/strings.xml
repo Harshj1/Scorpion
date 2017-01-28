@@ -13,4 +13,14 @@
         <item>ગુજરાતી</item>
     </string-array>
 
+    <string-array name="states_e">
+        <item>Maharashtra</item>
+        <item>Gujrat</item>
+    </string-array>
+
+    <string-array name="states_hindi">
+        <item>महाराष्ट्र</item>
+        <item>गुजरात</item>
+    </string-array>
+
 </resources>
