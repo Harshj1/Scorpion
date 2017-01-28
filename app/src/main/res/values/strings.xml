@@ -15,12 +15,32 @@
 
     <string-array name="states_e">
         <item>Maharashtra</item>
-        <item>Gujrat</item>
+        <item>Gujarat</item>
     </string-array>
 
     <string-array name="states_hindi">
         <item>महाराष्ट्र</item>
         <item>गुजरात</item>
+    </string-array>
+
+    <string-array name="city_me">
+        <item>Nagpur</item>
+        <item>Nashik</item>
+    </string-array>
+
+    <string-array name="city_mh">
+        <item>नागपुर</item>
+        <item>नासिक</item>
+    </string-array>
+
+    <string-array name="city_ge">
+        <item>Vadodara</item>
+        <item>Surat</item>
+    </string-array>
+
+    <string-array name="city_gh">
+        <item>वडोदरा</item>
+        <item>सूरत</item>
     </string-array>
 
 </resources>

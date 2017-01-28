@@ -26,6 +26,7 @@ public class Main2Activity extends AppCompatActivity {
 
         final Spinner spinner = (Spinner) findViewById(R.id.spinner);
         final Spinner spinner2 = (Spinner) findViewById(R.id.spinner2);
+        final Spinner spinner3 = (Spinner) findViewById(R.id.spinner3);
         final EditText editText= (EditText) findViewById(R.id.name);
         final Button register= (Button) findViewById(R.id.button);
 
@@ -38,13 +39,25 @@ public class Main2Activity extends AppCompatActivity {
         final ArrayAdapter <CharSequence> adapter3 = ArrayAdapter.createFromResource(this,R.array.states_hindi,android.R.layout.simple_spinner_item);
         adapter3.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
 
+        final ArrayAdapter <CharSequence> adapter4 = ArrayAdapter.createFromResource(this,R.array.city_me,android.R.layout.simple_spinner_item);
+        adapter3.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+
+        final ArrayAdapter <CharSequence> adapter5 = ArrayAdapter.createFromResource(this,R.array.city_mh,android.R.layout.simple_spinner_item);
+        adapter3.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+
+        final ArrayAdapter <CharSequence> adapter6 = ArrayAdapter.createFromResource(this,R.array.city_ge,android.R.layout.simple_spinner_item);
+        adapter3.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+
+        final ArrayAdapter <CharSequence> adapter7 = ArrayAdapter.createFromResource(this,R.array.city_gh,android.R.layout.simple_spinner_item);
+        adapter3.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+
+//        set default lang to english
         spinner.setAdapter(adapter1);
-//        addItemsOnSpinner1();
+
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id)
             {
-
                 String selected = parentView.getSelectedItem().toString();
 
                 if(selected.equals("English"))
@@ -68,63 +81,38 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
 
-    }
-//    public void addItemsOnSpinner1() {
-//        final Spinner spinner = (Spinner) findViewById(R.id.spinner);
-//        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this, R.array.language, android.R.layout.simple_spinner_item);
-//        adapter1.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-//        spinner.setAdapter(adapter1);
-//        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id)
-//            {
-//
-//                String selected = parentView.getItemAtPosition(position).toString();
-//
-//                if(selected== "English")
-//                {
-//                    addItemsOnSpinner2();
-//                }
-//
-//                else if(selected=="हिंदी")
-//                {
-//                    addItemsOnSpinner3();
-//                }
-//
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> parentView) {
-//                // your code here
-//            }
-//        });
-//    }
-    public void addItemsOnSpinner2(){
-        Spinner spinner= (Spinner) findViewById(R.id.spinner2);
-        ArrayAdapter <CharSequence> adapter1 = ArrayAdapter.createFromResource(this,R.array.states_e,android.R.layout.simple_spinner_item);
-        adapter1.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-        spinner.setAdapter(adapter1);
+
+        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id)
+            {
+                String selected = parentView.getSelectedItem().toString();
+
+                if(selected.equals("Maharashtra"))
+                {
+                    spinner3.setAdapter(adapter4);
+                }
+                else if(selected.equals("महाराष्ट्र"))
+                {
+                    spinner3.setAdapter(adapter5);
+                }
+                else if(selected.equals("Gujarat"))
+                {
+                    spinner3.setAdapter(adapter6);
+                }
+                else if(selected.equals("गुजरात"))
+                {
+                    spinner3.setAdapter(adapter7);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parentView) {
+                spinner3.setAdapter(adapter4);
+            }
+        });
     }
 
-    public void check_language()
-    {
-        Spinner spinner = (Spinner)findViewById(R.id.spinner);
-        String text = spinner.getSelectedItem().toString();
-        if (text == "English")
-        {
-
-        }
-        else if (text == "हिंदी")
-        {
-            addItemsOnSpinner3();
-        }
-    }
-    public void addItemsOnSpinner3(){
-        Spinner spinner= (Spinner) findViewById(R.id.spinner2);
-        ArrayAdapter <CharSequence> adapter1 = ArrayAdapter.createFromResource(this,R.array.states_hindi,android.R.layout.simple_spinner_item);
-        adapter1.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-        spinner.setAdapter(adapter1);
-    }
     void register(View view){
         Intent intent=new Intent(this,MainActivity.class);
         startActivity(intent);
