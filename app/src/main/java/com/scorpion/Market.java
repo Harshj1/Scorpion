@@ -35,13 +35,21 @@ public class Market extends AppCompatActivity {
 
         // Adding child data
         listDataHeader.add("Categories");
+        listDataHeader.add("Feed");
 
         List<String> Categories = new ArrayList<String>();
-        Categories.add("The Shawshank Redemption");
-        Categories.add("The Godfather");
-        Categories.add("The Godfather: Part II");
-        Categories.add("Pulp Fiction");
+        Categories.add("Cattles");
+        Categories.add("Donkeys");
+        Categories.add("Equine");
+
+        List<String> Feed = new ArrayList<String>();
+        Feed.add("Grain");
+        Feed.add("Hay");
+        Feed.add("Haylage");
+
 
         listDataChild.put(listDataHeader.get(0), Categories);
+        listDataChild.put(listDataHeader.get(1),Feed);
+
     }
 }
