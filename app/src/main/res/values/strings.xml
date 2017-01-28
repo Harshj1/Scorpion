@@ -6,10 +6,11 @@
 
     <string name="action_settings">Settings</string>
 
-    <string-array name="Language">
+    <string-array name="language">
         <item>English</item>
         <item>हिंदी</item>
         <item>मराठी</item>
         <item>ગુજરાતી</item>
     </string-array>
+
 </resources>
