@@ -22,39 +22,78 @@
         android:background="@drawable/textborder"
         android:onClick="register" />
 
-    <EditText
+    <Spinner
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:id="@+id/spinner"
+        android:background="@drawable/textborder"
+        android:padding="15dp"
+        android:dropDownSelector="@android:drawable/btn_dropdown"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/name" />
+
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/arrow_down_float"
+        android:id="@+id/imageView4"
+        android:layout_marginEnd="13dp"
+        android:layout_alignTop="@+id/spinner"
+        android:layout_alignEnd="@+id/spinner"
+        android:layout_marginTop="18dp" />
+
+    <EditText
+        android:layout_height="55dp"
         android:layout_width="250dp"
         android:textSize="20dp"
         android:padding="10dp"
         android:background="@drawable/textborder"
         android:id="@+id/name"
         android:hint="@string/Name_hint"
+        android:layout_marginTop="23dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp" />
+        android:layout_centerHorizontal="true" />
 
     <Spinner
         android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinner"
-        android:background="@drawable/textborder"
-        android:padding="15dp"
-        android:dropDownSelector="@android:drawable/btn_dropdown"
-        android:layout_marginTop="35dp"
-        android:layout_below="@+id/name"
-        android:layout_alignStart="@+id/name" />
-
-    <Spinner
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:id="@+id/spinner2"
         android:background="@drawable/textborder"
         android:padding="15dp"
         android:dropDownSelector="@android:drawable/btn_dropdown"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="25dp"
         android:layout_below="@+id/spinner"
         android:layout_alignStart="@+id/spinner" />
+
+    <Spinner
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:id="@+id/spinner3"
+        android:background="@drawable/textborder"
+        android:padding="15dp"
+        android:dropDownSelector="@android:drawable/btn_dropdown"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignStart="@+id/spinner2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/arrow_down_float"
+        android:id="@+id/imageView7"
+        android:layout_alignTop="@+id/spinner2"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_marginTop="18dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/arrow_down_float"
+        android:id="@+id/imageView8"
+        android:layout_alignBottom="@+id/spinner3"
+        android:layout_alignStart="@+id/imageView7"
+        android:layout_marginBottom="16dp" />
 
     <!--android:entries="@language/Language"-->
 </RelativeLayout>
