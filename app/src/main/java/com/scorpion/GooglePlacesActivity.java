@@ -13,9 +13,6 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.EditText;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -27,7 +24,7 @@ import com.google.android.gms.maps.model.LatLng;
 
 public class GooglePlacesActivity extends FragmentActivity implements LocationListener {
 
-    private static final String GOOGLE_API_KEY = "AIzaSSDFSDF8Kv2eP0PM8adf5dSDFysdfas323SD3HA";
+    private static final String GOOGLE_API_KEY = "AIzaSyDlMYf44WYv6NJGbbJMS2EcWsFB8hXz768";
     GoogleMap googleMap;
     EditText placeText;
     double latitude = 0;
@@ -45,7 +42,7 @@ public class GooglePlacesActivity extends FragmentActivity implements LocationLi
         setContentView(R.layout.activity_maps);
 
 //        placeText = (EditText) findViewById(R.id.placeText);
-        Button btnFind = (Button) findViewById(R.id.btnFind);
+//        Button btnFind = (Button) findViewById(R.id.btnFind);
         SupportMapFragment fragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.googleMap);
         googleMap = fragment.getMap();
         googleMap.setMyLocationEnabled(true);
@@ -68,7 +65,7 @@ public class GooglePlacesActivity extends FragmentActivity implements LocationLi
         }
         locationManager.requestLocationUpdates(bestProvider, 20000, 0, this);
 
-        btnFind.setOnClickListener(new OnClickListener() {
+       /*btnFind.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String type = placeText.getText().toString();
@@ -85,7 +82,7 @@ public class GooglePlacesActivity extends FragmentActivity implements LocationLi
                 toPass[1] = googlePlacesUrl.toString();
                 googlePlacesReadTask.execute(toPass);
             }
-        });
+        });*/
     }
 
     private boolean isGooglePlayServicesAvailable() {
