@@ -13,4 +13,49 @@
     tools:context="com.scorpion.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
+    <TextView
+        android:text="Kisan app help page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textSize="34dp"
+        tools:text="Kisan app help page"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp" />
+
+    <TextView
+        android:text="किसान हेल्पेज"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:textSize="34dp"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:text="Market"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/button2"
+        android:onClick="market"
+        android:background="@drawable/textborder" />
+
+    <Button
+        android:text="Knowledge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_marginEnd="29dp"
+        android:id="@+id/button3"
+        android:onClick="know"
+        android:background="@drawable/textborder"
+        android:padding="10dp" />
 </RelativeLayout>

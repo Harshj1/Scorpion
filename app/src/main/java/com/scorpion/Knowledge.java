@@ -24,10 +24,10 @@ public class Knowledge extends AppCompatActivity{
         setContentView(R.layout.activity_knowledge);
 
         ArrayList<String> st = new ArrayList<String>() ;
-        st.add("hi") ;
-        st.add("hello");
-        st.add("bye");
-        st.add("Royston");
+        st.add("Irrigation Facilities") ;
+        st.add("Fertilizers");
+        st.add("Pesticides");
+        st.add("Soil Control");
 
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
 
