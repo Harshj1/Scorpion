@@ -79,8 +79,8 @@ public class MainActivity extends AppCompatActivity
             }
             else if(id == R.id.Kh)
             {
-                Intent intent = new Intent(this,Knowledge.class);
-                startActivity(intent);
+                Intent intent1 = new Intent(this,Knowledge.class);
+                startActivity(intent1);
             }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

@@ -34,22 +34,28 @@ public class Market extends AppCompatActivity {
         listDataChild = new HashMap<String, List<String>>();
 
         // Adding child data
-        listDataHeader.add("Categories");
+        listDataHeader.add("Livestock");
         listDataHeader.add("Feed");
+        listDataHeader.add("Goods");
 
-        List<String> Categories = new ArrayList<String>();
-        Categories.add("Cattles");
-        Categories.add("Donkeys");
-        Categories.add("Equine");
+        List<String> Livestock = new ArrayList<String>();
+        Livestock.add("Cattles");
+        Livestock.add("Donkeys");
+        Livestock.add("Equine");
 
         List<String> Feed = new ArrayList<String>();
         Feed.add("Grain");
         Feed.add("Hay");
         Feed.add("Haylage");
 
+        List<String> Goods =new ArrayList<String>();
+        Goods.add("Attachments");
+        Goods.add("Heavy Equipment");
+        Goods.add("Tractors");
 
-        listDataChild.put(listDataHeader.get(0), Categories);
+        listDataChild.put(listDataHeader.get(0), Livestock);
         listDataChild.put(listDataHeader.get(1),Feed);
+        listDataChild.put(listDataHeader.get(2),Goods);
 
     }
 }

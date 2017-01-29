@@ -60,12 +60,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         // - replace the contents of the view with that element
         final String name = mDataset.get(position);
         holder.txtHeader.setText(mDataset.get(position));
-        holder.txtHeader.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                remove(name);
-            }
-        });
+//        holder.txtHeader.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                remove(name);
+//            }
+//        });
 
         holder.txtFooter.setText("Footer: " + mDataset.get(position));
 

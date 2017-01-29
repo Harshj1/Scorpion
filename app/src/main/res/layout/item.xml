@@ -3,7 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="55dp"
     android:orientation="vertical"
-    android:background="@drawable/textborder">
+    android:background="@drawable/textborder"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
 
     <TextView
         android:id="@+id/lblListItem"

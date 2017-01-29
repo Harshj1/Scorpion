@@ -3,9 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="5dp"
     android:background="@drawable/textborder"
-    android:layout_margin="10dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:layout_marginBottom="10dp"
     >
 
 
@@ -16,6 +17,7 @@
         android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
         android:textSize="30dp"
         android:textColor="#000000"
+
         />
 
 </LinearLayout>

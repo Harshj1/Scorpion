@@ -11,18 +11,13 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import com.scorpion.MainActivity;
 
-import static com.scorpion.MainActivity.count;
-
 public class Main2Activity extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(count==0);
-
-        else
-            setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
 
         final Spinner spinner = (Spinner) findViewById(R.id.spinner);
         final Spinner spinner2 = (Spinner) findViewById(R.id.spinner2);

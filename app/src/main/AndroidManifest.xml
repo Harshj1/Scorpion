@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Market"></activity>
+        <activity android:name=".Knowledge"></activity>
     </application>
 
 </manifest>
