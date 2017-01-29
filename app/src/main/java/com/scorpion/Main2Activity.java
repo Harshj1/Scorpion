@@ -40,16 +40,16 @@ public class Main2Activity extends AppCompatActivity {
         adapter3.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
 
         final ArrayAdapter <CharSequence> adapter4 = ArrayAdapter.createFromResource(this,R.array.city_me,android.R.layout.simple_spinner_item);
-        adapter3.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        adapter4.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
 
         final ArrayAdapter <CharSequence> adapter5 = ArrayAdapter.createFromResource(this,R.array.city_mh,android.R.layout.simple_spinner_item);
-        adapter3.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        adapter5.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
 
         final ArrayAdapter <CharSequence> adapter6 = ArrayAdapter.createFromResource(this,R.array.city_ge,android.R.layout.simple_spinner_item);
-        adapter3.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        adapter6.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
 
         final ArrayAdapter <CharSequence> adapter7 = ArrayAdapter.createFromResource(this,R.array.city_gh,android.R.layout.simple_spinner_item);
-        adapter3.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        adapter7.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
 
 //        set default lang to english
         spinner.setAdapter(adapter1);
